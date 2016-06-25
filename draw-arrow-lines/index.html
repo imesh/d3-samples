@@ -9,6 +9,10 @@
         Credit: http://stackoverflow.com/questions/18273884/live-drawing-of-a-line-in-d3-js 
     -->
     <style>
+        * {
+            font-family: 'Oxygen', sans-serif;
+            font-size: 10pt;
+        }
         marker {
             fill: steelblue;
         }
@@ -20,8 +24,10 @@
             marker-end: url(#triangle);
         }
     </style>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" />
 </head>
 <body>
+    <p>Click and drag to draw arrow lines:<p>
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script>
         var line;
