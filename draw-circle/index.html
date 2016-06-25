@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- 
+        D3 draw circle sample            
+        Source: https://github.com/imesh/d3-samples   
+        License: Apache License 2.0
+        Credit: http://stackoverflow.com/questions/18273884/live-drawing-of-a-line-in-d3-js 
+    -->
+    <style>        
+        circle {
+            fill: steelblue;
+            stroke: grey;
+            stroke-width: 5;
+            stroke-linecap: round;
+            marker-end: url(#triangle);
+        }
+    </style>
+</head>
+<body>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script>
+        var line;
+        // Create svg
+        var svg = d3.select("body").append("svg")
+           .attr("width", 1000)
+           .attr("height", 600);
+        
+        var circle = svg.append("circle")
+                        .attr("cx", 100)
+                        .attr("cy", 100)
+                        .attr("r", 50);
+    </script>
+</body>
+</html>
